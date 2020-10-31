@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n, t1 = 0, t2 = 1, nextTerm = 0;
+    int n, t1 = 0, t2 = 1, nextval = 0;
 
     cout << "Enter the number of terms: ";
     cin >> n;
@@ -25,9 +25,9 @@ int main()
         }
         nextTerm = t1 + t2;
         t1 = t2;
-        t2 = nextTerm;
+        t2 = nextval;
         
-        cout << nextTerm << " ";
+        cout << nextval << " ";
     }
     return 0;
 }
